@@ -148,7 +148,7 @@ static void testmul(void)
 		if (cmp64(mul64(mul64(i, j), k), mul64(i, mul64(j, k))) != 0) ERR;
 
 		/* left and right distributivity */
-		if (cmp64(mul64(i + j), k), mul64(i, k) + mul64(j, k)) != 0) ERR;
+		if (cmp64(mul64(i + j, k), mul64(i, k) + mul64(j, k)) != 0) ERR;
 		if (cmp64(mul64(i, j + k), mul64(i, j) + mul64(i, k)) != 0) ERR;
 	}
 }
