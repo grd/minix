@@ -161,7 +161,7 @@ static void testmul(void)
 		if (((i * j) * k) != (i * (j * k))) ERR;
 
 		/* left and right distributivity */
-		if ((i + j) * k) != (i * k) + (j * k)) ERR;
+		if ((i + j) * k != (i * k) + (j * k)) ERR;
 		if ((i * (j + k)) != (i * j) + (i * k)) ERR;
 	}
 }
