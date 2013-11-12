@@ -169,6 +169,7 @@ static void testmul(void)
 static void testdiv0(void)
 {
 	int funcidx;
+	u64_t res;	/* for the div 0 tests */
 
 	assert(j == 0);
 
@@ -178,12 +179,12 @@ static void testdiv0(void)
 		if (setjmp(jmpbuf_SIGFPE) == 0) {
 			/* divide by zero using various functions */
 			switch (funcidx) {
-				case 0: i / j;			ERR; break;
-				case 1: i / (unsigned long) j;	ERR; break;
-				case 2: i / (unsigned long) j;	ERR; break;
-				case 3: i % j;			ERR; break;
-				case 4: i % (unsigned long) j;	ERR; break;
-				default: assert(0);		ERR; break;
+				case 0: res = i / j;			ERR; break;
+				case 1: res = i / (unsigned long) j;	ERR; break;
+				case 2: res = i / (unsigned long) j;	ERR; break;
+				case 3: res = i % j;			ERR; break;
+				case 4: res = i % (unsigned long) j;	ERR; break;
+				default: assert(0);			ERR; break;
 			}
 
 			/* if we reach this point there was no signal and an
