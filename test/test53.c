@@ -137,7 +137,7 @@ static void testmul(void)
 
 	/* compare to 32-bit multiplication if possible */	
 	if ((unsigned long)(i>>32) == 0 && (unsigned long)(j>>32) == 0) {
-		if (prod != (u64_t)(ilo * jlo)) ERR;
+		if (prod != (u64_t)ilo * jlo) ERR;
 		
 		/* if there is no overflow we can check against pure 32-bit */
 		if (prodbits < 32 && prod != ilo * jlo) ERR;
