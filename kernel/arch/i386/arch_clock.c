@@ -8,7 +8,6 @@
 
 #include "kernel/clock.h"
 #include "kernel/interrupt.h"
-#include <minix/u64.h>
 #include "glo.h"
 #include "kernel/profile.h"
 

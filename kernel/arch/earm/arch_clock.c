@@ -6,7 +6,6 @@
 #include "kernel/clock.h"
 #include "kernel/proc.h"
 #include "kernel/interrupt.h"
-#include <minix/u64.h>
 #include "kernel/glo.h"
 #include "kernel/profile.h"
 

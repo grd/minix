@@ -14,8 +14,6 @@
 #include <signal.h>
 #include <machine/vm.h>
 
-#include <minix/u64.h>
-
 #include "archconst.h"
 #include "arch_proto.h"
 #include "serial.h"

@@ -15,7 +15,6 @@
 #include <minix/com.h>
 #include <minix/endpoint.h>
 #include <machine/vmparam.h>
-#include <minix/u64.h>
 #include <minix/type.h>
 #include <minix/reboot.h>
 #include "clock.h"

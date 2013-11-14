@@ -12,8 +12,6 @@
 
 #include "arch_proto.h"
 
-#include <minix/u64.h>
-
 #include "apic.h"
 #include "apic_asm.h"
 #include "kernel/clock.h"

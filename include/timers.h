@@ -18,7 +18,6 @@
 #include <limits.h>
 
 #include <sys/types.h>
-#include <minix/u64.h>
 #include <minix/minlib.h>
 #include <minix/endpoint.h>
 
